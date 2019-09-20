@@ -119,6 +119,7 @@
 * [iOS(iPad)] `ComboBox` : the combobox wasn't fully expanding vertically on first opening.
 * `Popup` & `ComboBox` (and other controls using `Popup`) were not behaving properly when `IsLightDismissable` were set to `true`.
 * [Wasm] Fix unloaded UIElements are made visible if measured and arranged
+* [Android] Fix invalid ImageBrush stack overflow with delayed image reuse
 
 ## Release 1.45.0
 ### Features
