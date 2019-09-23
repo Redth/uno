@@ -2,6 +2,7 @@
 
 ## Next version
 ### Features
+* Support for `Launcher.QueryUriSupportAsync` method on Android and iOS
 * [#1493](https://github.com/unoplatform/uno/pull/1493) - Implemented the `Windows.Input.PointerUpdateKind` Enum.
 *  [#1428](https://github.com/unoplatform/uno/issues/1428) - Add support for horizontal progressbars to `BindableProgressBar` on Android.
 * Add support for `Windows.Devices.Sensors.Magnetometer` APIs on iOS, Android and WASM
@@ -120,6 +121,7 @@
 * `Popup` & `ComboBox` (and other controls using `Popup`) were not behaving properly when `IsLightDismissable` were set to `true`.
 * [Wasm] Fix unloaded UIElements are made visible if measured and arranged
 * [Android] Fix invalid ImageBrush stack overflow with delayed image reuse
+* [Android] Fix java NRE handing touch events on detached view
 
 ## Release 1.45.0
 ### Features
