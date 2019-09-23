@@ -185,6 +185,15 @@
 
 				if (queryIndex !== -1) {
 					return document.location.search.substring(queryIndex + 1);
+				} else {
+					/*
+					* Fall back to trying a url fragment if no querystring args were found
+					*/
+					const fragmentIndex = document.location.search.indexOf('#');
+					
+					if (fragmentIndex !== -1) {
+						return document.location.search.substring(fragmentIndex + 1);
+					}
 				}
 
 				return "";
